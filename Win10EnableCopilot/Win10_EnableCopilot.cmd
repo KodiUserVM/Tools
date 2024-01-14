@@ -39,7 +39,6 @@ echo  ^:::: ::      ::     :: ::::   ::: :::
 echo  ^:: : :       :     : :: ::    :: :: :                                       
 exit /b
 
-::Function Color modified by Stec
    ::example:call :Color 02 "WellCome"
    ::example:call :Color 02 "Well" && call :Color 03 "Come" &echo.
 :Color
