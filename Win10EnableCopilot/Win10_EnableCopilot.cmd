@@ -15,7 +15,7 @@ Call :Color 05 "   [%Title%]" &echo.
 
 ::Main
  REM Call :Color 02 "Testing internet connection" &echo.
- REM ping /n 3 8.8.8.8 >nul || (Call :Color 04 "Error Internet is not connected" &echo. && timeout /t 3 >nul && exit /b)
+ REM ping /n 3 www.google.com >nul || (Call :Color 04 "Error Internet is not connected" &echo. && timeout /t 3 >nul && exit /b)
  Powershell Start-BitsTransfer -Source '%Link%' -Destination '%TEMP%\ViVeTool-v0.3.3.zip'
  if exist "%TEMP%\ViVeTool-v0.3.3.zip" Powershell Expand-Archive -LiteralPath '%TEMP%\ViVeTool-v0.3.3.zip' -DestinationPath 'C:\ViVeTool' -Force
  Start "" /wait C:\ViVeTool\vivetool.exe /enable /id:46686174,47530616,44755019
